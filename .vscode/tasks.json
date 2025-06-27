@@ -2,16 +2,16 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "generate-doc",
+      "label": "generate-slide",
       "type": "shell",
-      "command": "pnpm dlx @marp-team/marp-cli@latest src/docs/${input:slide}/${input:slide}.md -o docs/${input:slide}/index.html && cp -r src/docs/${input:slide}/images docs/${input:slide}/images",
+      "command": "pnpm dlx @marp-team/marp-cli@latest src/docs/${input:slide}/${input:slide}.md -o docs/${input:slide}/index.html && cp -r src/docs/${input:slide}/images docs/${input:slide}",
       "group": "build",
       "problemMatcher": []
     },
     {
-      "label": "generate-presenter-kuwahara",
+      "label": "generate-presenter",
       "type": "shell",
-      "command": "pnpm dlx @marp-team/marp-cli@latest src/docs/presenter/yuichi_kuwahara.md -o docs/presenter.html",
+      "command": "pnpm dlx @marp-team/marp-cli@latest src/docs/presenter/${input:presenter}.md -o docs/presenter/index.html",
       "group": "build",
       "problemMatcher": []
     }
@@ -22,6 +22,12 @@
       "description": "Select slide to generate",
       "type": "pickString",
       "options": ["svqk", "svelte"]
+    },
+    {
+      "id": "presenter",
+      "description": "Select presenter to generate",
+      "type": "pickString",
+      "options": ["yuichi_kuwahara"]
     }
   ]
 }

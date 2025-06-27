@@ -28,7 +28,7 @@ section {
 ---
 # 発表者紹介
 
-- [発表者](presenter.html)
+- [発表者](../presenter/)
 
 ---
 # Svelte概説
