@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "generate-doc",
+      "type": "shell",
+      "command": "pnpm dlx @marp-team/marp-cli@latest src/docs/${input:slide}/${input:slide}.md -o docs/${input:slide}/index.html && cp -r src/docs/${input:slide}/images docs/${input:slide}/images",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "generate-presenter-kuwahara",
+      "type": "shell",
+      "command": "pnpm dlx @marp-team/marp-cli@latest src/docs/presenter/yuichi_kuwahara.md -o docs/presenter.html",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "slide",
+      "description": "Select slide to generate",
+      "type": "pickString",
+      "options": ["svqk", "svelte"]
+    }
+  ]
+}
