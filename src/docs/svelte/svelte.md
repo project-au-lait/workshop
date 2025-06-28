@@ -277,10 +277,10 @@ src/routes/users/[userId]/+page.svelte
 Docs: SvelteKit / Core Concepts / [Loading data](https://svelte.dev/docs/kit/load#Page-data)
 
 ---
-# 生成AI
+# GitHub Copilot
 
-- 当ハンズオンで使用する生成AIツール
-  - GitHub Copilot(以下 Copilot) + VSCode
+当ハンズオンではGitHub Copilot(以下 Copilot)をVSCodeとChat GPTと共に使用
+
 - 主な使用方法
   - Code Assist
   - Editor Inline Chat
@@ -332,7 +332,8 @@ Docs: SvelteKit / Core Concepts / [Loading data](https://svelte.dev/docs/kit/loa
 <div class="left-right">
   <div>
     <ul>
-      <li><code>/</code> + <code>{command}</code>で</li>
+      <li>よく使う指示を<code>/</code> + <code>{command}</code>で始める入力方法</li>
+      <li><code>/</code>を入力すると選択肢が表示</li>　
     </ul>
   </div>
   <div>
@@ -459,7 +460,7 @@ echo "- モデルはinterfaceとして個別のファイルに定義する。" >
 ---
 # 作業ステップ
 
-1. 必要なソフトウェアのインストール
+1. 必要なソフトウェアのインストール -> [手順](./setup.html)
 2. プロジェクト作成
 3. json-serverのセットアップ
 4. 初期断面のコミットと動作確認
