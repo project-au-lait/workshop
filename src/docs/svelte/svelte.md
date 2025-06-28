@@ -20,10 +20,10 @@ section {
 - 発表者紹介
 - Svelte概説
 - SvelteKit概説
-- 当Workshopで使用する生成AI
+- GitHub Copilot概説
 - Hands On
-- まとめ
 - Q & A
+- まとめ
 
 ---
 # 発表者紹介
@@ -277,12 +277,12 @@ src/routes/users/[userId]/+page.svelte
 Docs: SvelteKit / Core Concepts / [Loading data](https://svelte.dev/docs/kit/load#Page-data)
 
 ---
-# GitHub Copilot
+# GitHub Copilot概説
 
 当ハンズオンではGitHub Copilot(以下 Copilot)をVSCodeとChat GPTと共に使用
 
 - 主な使用方法
-  - Code Assist
+  - Code Completions
   - Editor Inline Chat
   - Chat (Ask, Edit, Agent)
 
@@ -496,7 +496,7 @@ pnpm dev
 
 **[json-server](https://github.com/typicode/json-server):** jsonファイルに対しCRUD処理を行うREST APIを提供するサーバー
 
-以下のコマンドを実行
+`svelte-hands-on`ディレクトリで以下のコマンドを実行
 
 <p class="code">
 <span class="comment"># json-serverのインストール</span><br/>
@@ -524,7 +524,7 @@ pnpm json-server db.json
 ---
 # 4. 初期断面のコミットと動作確認
 
-以下のコマンドを実行
+`svelte-hands-on`ディレクトリで以下のコマンドを実行
 
 ```sh
 # Gitリポジトリの作成と初期断面のコミット
@@ -545,7 +545,7 @@ code .
 1. <a href="#作成するページ">作成するページ</a>のページごとに以下のステップを繰り返し
    1. URLに対応するディレクトリに+page.svelte、+page.tsファイルを作成
    2. 作成したファイルの内容を実装
-      - このとき、CopilotのCode AssistやEditor Inline Chatを適宜使用
+      - このとき、CopilotのCode CompletionsやEditor Inline Chatを適宜使用
    3. 実装したファイルの実行結果をブラウザで確認 
 
 
